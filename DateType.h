@@ -46,6 +46,9 @@ class dateType
 		
 		int resetDay();
 
+		int resetYearAgain();
+
+
 		dateType(int = 1, int = 1, int = 1900);
 		//default constructor
 	private:

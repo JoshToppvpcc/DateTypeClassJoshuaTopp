@@ -281,7 +281,7 @@ int dateType::resetMonth()
 }
 int dateType::resetDay() 
 {
-	dDay = 29;
+	dDay = 29; 
 	dateType::dateType(dMonth, dDay, dYear);
 	cout << "New date after resetting the day to 29 is " << dMonth << "-" << dDay << "-" << dYear << endl;
 
