@@ -41,14 +41,6 @@ class dateType
 
 		void printDate() const;
 		//print the date in the format: dMonth-dDay-dYear
-		int resetMonth();
-
-		int resetYear();
-		
-		int resetDay();
-
-		int resetYearAgain();
-
 
 		dateType(int = 1, int = 1, int = 1900);
 		//default constructor
