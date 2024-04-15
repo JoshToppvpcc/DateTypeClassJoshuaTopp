@@ -2,8 +2,9 @@
 class dateType
 	{
 	public:
-		void setDate(int month, int day, int year);
 		//set member variables dMonth, dDay, and dYear
+		void setDate(int month, int day, int year);
+
 
 		void setMonth(int month);
 		//set member variable dMonth

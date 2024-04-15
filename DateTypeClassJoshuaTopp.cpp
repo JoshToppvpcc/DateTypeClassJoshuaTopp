@@ -96,14 +96,14 @@ void dateType::calculateNewDate(int dayAmount)
 {
 	if (dayAmount + dateType::dDay > dateType::getDaysInMonth()) 
 	{
-		int newMonth =dateType::dMonth + 1; 
-		int newDay = dayAmount - (dateType::getDaysInMonth() - dDay);
-		cout << "The new date after adding " << dayAmount << " days is " << newMonth << "-" << newDay << "-" << dYear << endl;
+		dDay = dayAmount - (dateType::getDaysInMonth() - dDay);
+		dMonth =dateType::dMonth + 1; 
+		cout << "The new date after adding " << dayAmount << " days is " << dMonth << "-" << dDay << "-" << dYear << endl;
 	}
 	else 
 	{
-		int newDay = dDay + dayAmount;
-		cout << "The new date after adding " << dayAmount << " days is " << dMonth << "-" << newDay << "-" << dYear << endl;
+		dDay = dDay + dayAmount;
+		cout << "The new date after adding " << dayAmount << " days is " << dMonth << "-" <<dDay << "-" << dYear << endl;
 	}
 }
 
@@ -265,25 +265,4 @@ dateType::dateType(int month, int day, int year) //default constructor. Same bod
 		else
 			dDay = 1;
 	}
-}
-int dateType::resetYear()
-{
-	dYear = 2000;
-	cout << "New date after resetting year to 2000 " << dMonth << "-" << dDay << "-" << dYear << endl;
-	return 0;
-}
-int dateType::resetMonth() 
-{
-	dMonth = 2;
-	cout << "New date after resetting the month to february is " << dMonth << "-" << dDay << "-" << dYear << endl;
-	return 0;
-
-}
-int dateType::resetDay() 
-{
-	dDay = 29; 
-	dateType::dateType(dMonth, dDay, dYear);
-	cout << "New date after resetting the day to 29 is " << dMonth << "-" << dDay << "-" << dYear << endl;
-
-	return 0;
 }

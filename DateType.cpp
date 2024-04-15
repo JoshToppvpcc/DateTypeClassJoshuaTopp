@@ -11,9 +11,19 @@ int main()
 	cout << "Total days remaining in year is " << myDate.getDaysRemaining() << endl;
 	cout << "The total days in this month are " << myDate.getDaysInMonth() << endl;
 	myDate.calculateNewDate(15);
-	myDate.resetYear();
-	myDate.resetMonth();
-	myDate.resetDay();
+	myDate.setYear(2000);
+	cout << " The new date after setting the year to 2000 is : ";
+	myDate.printDate();
+	myDate.setMonth(2);
+	cout << "The new date after setting the month to 2 is : ";
+	myDate.printDate();
+	myDate.setDay(29);
+	cout << "The new date after setting the day to 29 is : ";
+	myDate.printDate();
+	myDate.setYear(2001);
+	cout << "The new date after restting the year to 2001 is : ";
+	myDate.setDate(2,29,2001);
+	myDate.printDate();
 	
 
 	return 0;
