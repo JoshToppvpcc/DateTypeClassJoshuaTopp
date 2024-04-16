@@ -3,7 +3,7 @@
 using namespace std; 
 int main()
 {
-	//Tested and verified all the functions, except calculateNewDate
+	
 	dateType myDate(2, 20, 2003);
 	cout << "The date with constructor parameters : ";
 	myDate.printDate();
