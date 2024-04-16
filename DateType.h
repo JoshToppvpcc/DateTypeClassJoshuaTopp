@@ -2,6 +2,7 @@
 class dateType
 	{
 	public:
+
 		//precondition - make sure the numbers are input in the correct order, month, day year.
 		//post condition - checks to make sure month is between 1-12, day is between 1-31, or 30 or 28 or 29, depending on the month/leap year, and the year is above 0.
 		void setDate(int month, int day, int year);
